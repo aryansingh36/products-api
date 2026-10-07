@@ -1,9 +1,10 @@
 package uk.ac.westminster.products_api;
 
 public class Product {
-    public Long id;
-    public String name;
-    public double price;
+    private Long id;
+    private String name;
+    private double price;
+
 
     public Product(Long id, String name, double price){
         this.id = id;
@@ -12,4 +13,15 @@ public class Product {
 
     }
 
+    public long getId(){
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getPrice() {
+        return price;
+    }
 }

@@ -13,3 +13,4 @@ public class ProductController {
 }
 
 
+//Note: With fifteen fields, I'd notice a getter is missing or misused because Spring/Jackson would either omit that field from the JSON response or throw a serialization error, making the output clearly incomplete when I test the endpoint.
